@@ -1,0 +1,5 @@
+node_modules/
+.next/
+.env.local
+service-account.json
+public/campaigns/
