@@ -1,0 +1,8 @@
+{
+  "framework": "nextjs",
+  "functions": {
+    "pages/api/generate.js": {
+      "maxDuration": 300
+    }
+  }
+}
