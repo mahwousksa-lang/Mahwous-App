@@ -8,8 +8,8 @@ export default async function handler(req, res) {
   if (!campaignData) return res.status(400).json({ error: 'بيانات الحملة مطلوبة' });
   try {
     const result = await sendToMake(campaignData, publishingOptions || {});
-    return res.status(200).json({ success: true, ...result });
+    return res.status(200).json(result);
   } catch (e) {
-    return res.status(500).json({ error: e.message || 'فشل الإرسال' });
+    return res.status(500).json({ error: e.message });
   }
 }
